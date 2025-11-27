@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+
+import sys
+import math
+
+s = 0.0
+for line in sys.stdin:
+    s += float(line)**2
+
+print(math.sqrt(s))
