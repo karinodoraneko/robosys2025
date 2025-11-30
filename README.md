@@ -15,13 +15,13 @@
  3
  4
  （Ctrl+Dを押して入力終了）
- 5.0
+ 5
  ```
 
  ### 使用例２
  ```
  $ echo -e "3\n4" | ./norm
- 5.0
+ 5
  ```
 
  ### 使用例３
@@ -42,5 +42,5 @@
  - © 2025 Yuto Matsushima
 
  ## 謝辞
- 参考文献
- - [ryuichiueda/my_slides robosys_2025](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2025)
+ - 参考文献
+   - [ryuichiueda/my_slides robosys_2025](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2025)
