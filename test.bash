@@ -11,7 +11,9 @@ res=0
 
 ### I/O TEST ###
 out=$(echo -e "3\n4" | ./norm)
-[ "${out}" = 5.0 ] || ng $LINENO
+[ "${out}" = 5 ] || ng $LINENO
+out=$(seq 5 | ./norm)
+[ "${out}" = 7.416198487095663 ] || ng $LINENO
 
 ### STRANGE INPUT ###
 out=$(echo あ | ./norm)
