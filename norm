@@ -5,13 +5,18 @@
 import sys
 import math
 
-ans = 0.0
-for line in sys.stdin:
-    ans += float(line)**2
+def calculate(lines):
+    ans = 0.0
+    for line in lines:
+        ans += float(line)**2
+    return math.sqrt(ans)
 
-ans = math.sqrt(ans)
+def tonum(value):
+    if value.is_integer():
+        return int(value)
+    else:
+        return value
 
-if ans.is_integer():
-    print(int(ans))
-else:
-    print(ans)
+if __name__ == '__main__':
+    result = calculate(sys.stdin)
+    print(tonum(result))
